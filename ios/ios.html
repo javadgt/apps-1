@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./ios.css" />
+    <title>دانلود نرم افزار کپی سا</title>
+  </head>
+
+  <body class="">
+    <div class="container">
+
+      <div class="circle circle_1"></div>
+      <div class="circle circle_2"></div>
+
+      <h1 class="text-center pt-5 display-4 fw-bold text-white position-relative mb-5">
+        دانلود نرم افزار کپیسا
+      </h1>
+      <span class="text-white">(نسخه ios)</span>
+
+      <div class="flex flex-col gap-2 pt-3">
+        <div class="bg-light d-flex justify-content- align-items-center rounded-1 box">
+          <div style="width: 20%" class=" border-start left-shadow">
+            <img src="./img/app-store.png" alt="اپ استور" class="w-100 h-auto p-2" />
+          </div>
+          <div class="flex-grow-1 text-center">
+              <h2 class="font-title title text-end mx-auto d-inline-block justify-content-center mb-0 gap-2">
+                <span style="word-spacing: -2px;">
+                    دانلود نرم افزار از
+                </span>
+                <span class="text-primary">
+                     اپ استور
+                </span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2 pt-3">
+        <div class="bg-light d-flex justify-content- align-items-center rounded-1 box">
+          <div style="width: 20%" class=" border-start left-shadow">
+            <img src="./img/sibche.png" alt="سیبچه" class="w-100 h-auto p-2" style="transform: scale(1.1);"/>
+          </div>
+          <div class="flex-grow-1 text-center">
+              <h2 class="font-title title text-end mx-auto d-inline-block justify-content-center mb-0 gap-2">
+                <span style="word-spacing: -2px;">
+                    دانلود نرم افزار از
+                </span>
+                <span class="text-primary">
+                     سیبچه
+                </span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col gap-2 pt-3">
+        <div class="bg-light d-flex justify-content- align-items-center rounded-1 box">
+          <div style="width: 20%" class=" border-start left-shadow">
+            <img src="./img/anar.png" alt="اناردونی" class="w-100 h-auto p-2" style="transform: scale(.9);" />
+          </div>
+          <div class="flex-grow-1 text-center">
+              <h2 class="font-title title text-end mx-auto d-inline-block justify-content-center mb-0 gap-2">
+                <span style="word-spacing: -2px;">
+                    دانلود نرم افزار از
+                </span>
+                <span class="text-danger">
+                     اناردونی
+                </span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <script>
+      const boxs = document.querySelectorAll(".box")
+      boxs.forEach((box,i) => {
+        setTimeout(()=>{
+          box.classList.add(`active`)
+          console.log(`${300 * (i+1)}s`);
+        },[300 * (i+1)])
+      })
+    </script>
+  </body>
+</html>
